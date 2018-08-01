@@ -1,0 +1,10 @@
+.sidebar{
+   display:flex;
+   height: 300px;
+}
+
+.fullbox{
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
+}
