@@ -63,7 +63,7 @@ class TopNavbar extends React.Component {
                 <NavLink href="/dologin">DoLogin</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="companyadminpage">CompanyInfoAdminPage</NavLink>
+                <NavLink href="/companyadminpage">CompanyInfoAdminPage</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/memberadminpage">MemberAdminPage</NavLink>
