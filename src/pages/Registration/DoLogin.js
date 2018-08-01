@@ -3,7 +3,7 @@ import { BasicInput } from "components/InputForm";
 import { Button, Box } from "gestalt";
 import "gestalt/dist/gestalt.css";
 
-class LoginPage extends React.Component {
+class DoLogin extends React.Component {
   render() {
     return (
       <div>
@@ -31,4 +31,4 @@ class LoginPage extends React.Component {
   }
 }
 
-export default LoginPage;
+export default DoLogin;

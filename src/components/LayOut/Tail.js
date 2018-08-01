@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavItem, Col } from "reactstrap";
 
-const Footer = () => {
+const Tail = () => {
   return (
     <div>
       <p
@@ -21,4 +21,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Tail;

@@ -16,7 +16,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-class topmenu extends React.Component {
+class Navbar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -96,4 +96,4 @@ class topmenu extends React.Component {
   }
 }
 
-export default topmenu;
+export default Navbar;

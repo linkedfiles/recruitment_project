@@ -16,17 +16,10 @@ class BasicInput extends React.Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <Box>
         <Box marginBottom={2}>
           <Label htmlFor={this.props.htmlFor}>
             <Text>{this.props.title}</Text>
-=======
-      <div>
-        <Box marginTop={2} marginBottom={2}>
-          <Label htmlFor={this.props.htmlFor}>
-            <Text size="sm">{this.props.title}</Text>
->>>>>>> a8539968f1bcb726f66e3f6ad2b4ab6d81648026
           </Label>
         </Box>
         <TextField
@@ -35,21 +28,10 @@ class BasicInput extends React.Component {
           placeholder={this.props.signplaceholder}
           value={this.state.value}
           type={this.props.signtype}
-<<<<<<< HEAD
         />
       </Box>
-=======
-          size="sm"
-          height={30}
-        />
-      </div>
->>>>>>> a8539968f1bcb726f66e3f6ad2b4ab6d81648026
     );
   }
 }
 
-<<<<<<< HEAD
 export default BasicInput;
-=======
-export default BasicInput;
->>>>>>> a8539968f1bcb726f66e3f6ad2b4ab6d81648026
