@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Text, Icon } from "gestalt";
 import "gestalt/dist/gestalt.css";
 
-import { LoginPage } from "pages/Registration";
+import { DoLogin, CompanyJoin } from "pages/Registration";
 import { CompanyInfoAdminPage, MemberAdminPage } from "pages/MyPage";
 
-import Topmenu from "./components/LayOut/Topmenu";
-import Footer from "./components/LayOut/Footer";
+import TopNavbar from "./components/LayOut/TopNavbar";
+import Tail from "./components/LayOut/Tail";
 
 import BasicInput from "./components/InputForm/BasicInput";
 
@@ -18,10 +18,11 @@ class App extends Component {
       <main className="main">
         <Router>
           <div>
-            <Topmenu />
+            <TopNavbar />
             <Route exact path="/" component={BasicInput} />
-            <Route path="/loginpage" component={LoginPage} />
+            <Route path="/dologin" component={DoLogin} />
             <Route path="/companyadminpage" component={CompanyInfoAdminPage} />
+            <Route path="/companyjoin" component={CompanyJoin} />
             <Route path="/memberadminpage" component={MemberAdminPage} />
             <Route path="/compnayinfoadmin" component={CompanyInfoAdminPage} />
             <Route path="/recruitprset" component={CompanyInfoAdminPage} />
@@ -29,7 +30,7 @@ class App extends Component {
             <Route path="/memberinfoadmin" component={CompanyInfoAdminPage} />
           </div>
         </Router>
-        <Footer />
+        <Tail />
       </main>
     );
   }

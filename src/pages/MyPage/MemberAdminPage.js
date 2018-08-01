@@ -1,5 +1,5 @@
 import React from "react";
-import { SubMenu } from "components/LayOut";
+import { Sidebar } from "components/LayOut";
 import { UserCard, InviteCard, BtnLessCard } from "components/Cards"
 //import { BasicInput } from "components/InputForm";
 //import { TextAreaField } from "components/InputTextField"
@@ -23,7 +23,7 @@ class MemberAdminPage extends React.Component {
         padding={1} 
         position="relative" height={900} 
         >
-        <SubMenu />
+        <Sidebar />
         </Box>
       </Column>
 

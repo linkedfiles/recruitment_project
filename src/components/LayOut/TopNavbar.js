@@ -16,7 +16,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-class Navbar extends React.Component {
+class TopNavbar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -50,7 +50,7 @@ class Navbar extends React.Component {
           color="info"
           light
           expand
-          className="navbar"
+          className="topnavbar"
         >
           <NavbarBrand href="/">STDIO.H</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -60,19 +60,16 @@ class Navbar extends React.Component {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/LoginPage">LoginPage</NavLink>
+                <NavLink href="/dologin">DoLogin</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="CompanyJoin">CompanyJoin</NavLink>
+                <NavLink href="companyadminpage">CompanyInfoAdminPage</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/messageCard">MsgCard</NavLink>
+                <NavLink href="/memberadminpage">MemberAdminPage</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/popup">POPUP</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/PwdReset">PwdReset</NavLink>
+                <NavLink href="/companyjoin">CompanyJoin</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/emailjoin">EmailJoin</NavLink>
@@ -96,4 +93,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default TopNavbar;

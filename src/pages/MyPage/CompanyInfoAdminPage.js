@@ -1,5 +1,5 @@
 import React from "react";
-import { SubMenu } from "components/LayOut";
+import { Sidebar } from "components/LayOut";
 import { BasicInput } from "components/InputForm";
 import { TextAreaField } from "components/InputTextField";
 import { Button, Box, Column,Text, Avatar, Icon, Heading, Container } from "gestalt";
@@ -22,7 +22,7 @@ class CompanyInfoAdminPage extends React.Component {
         padding={1} 
         position="relative" height={900} 
         >
-        <SubMenu />
+        <Sidebar />
         
         </Box>
       </Column>
