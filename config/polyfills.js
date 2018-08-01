@@ -20,3 +20,8 @@ Object.assign = require('object-assign');
 if (process.env.NODE_ENV === 'test') {
   require('raf').polyfill(global);
 }
+<<<<<<< HEAD
+=======
+
+require('core-js');
+>>>>>>> a8539968f1bcb726f66e3f6ad2b4ab6d81648026
