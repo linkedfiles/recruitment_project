@@ -25,6 +25,7 @@ class UserCard extends React.Component {
        </Box>
         </Box>
        
+       
         <Box column={5} paddingY={4} paddingX={2}>
         <Button  text="master" size="sm" color="black" color="blue" inline/>
         

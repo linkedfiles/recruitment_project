@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Text, Icon } from "gestalt";
 import "gestalt/dist/gestalt.css";
 
-import { DoLogin, CompanyJoin } from "pages/Registration";
+import { DoLogin, CompanyJoin, EmailJoin } from "pages/Registration";
 import { CompanyInfoAdminPage, MemberAdminPage } from "pages/MyPage";
 
 import TopNavbar from "./components/LayOut/TopNavbar";
@@ -28,8 +28,10 @@ class App extends Component {
             <Route path="/recruitprset" component={CompanyInfoAdminPage} />
             <Route path="/subcriptiondue" component={CompanyInfoAdminPage} />
             <Route path="/memberinfoadmin" component={CompanyInfoAdminPage} />
+            <Route path="/emailjoin" component={EmailJoin} />
           </div>
         </Router>
+
         <Tail />
       </main>
     );

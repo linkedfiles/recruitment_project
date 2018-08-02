@@ -5,7 +5,7 @@ const Tail = () => {
   return (
     <div>
       <p
-        ClassName="footer"
+        ClassName="tail"
         frameBorder="0"
         scrolling="0"
         width="100"

@@ -2,10 +2,10 @@ import React from "react";
 import { Sidebar } from "components/LayOut";
 import { BasicInput } from "components/InputForm";
 import { TextAreaField } from "components/InputTextField";
-import { RadioBtnGroup } from "components/RadioButton";
-import { Button, Box, Column,Text, Avatar, Icon, Heading, Label, Link } from "gestalt";
+import { Button, Box, Column,Text, Avatar, Icon, Heading, Container } from "gestalt";
 import "gestalt/dist/gestalt.css";
 import "./CompanyInfoAdminPage.css"
+import { RadioBtnGroup } from "components/RadioButton";
 
 
 class CompanyInfoAdminPage extends React.Component {
@@ -21,7 +21,7 @@ class CompanyInfoAdminPage extends React.Component {
         <Box ClassName="sidebar"
         color="navy" 
         padding={1} 
-        position="relative" height={1200} 
+        position="relative" height={900} 
         >
         <Sidebar />
         
@@ -32,12 +32,12 @@ class CompanyInfoAdminPage extends React.Component {
         <Box position="relative" padding={12}>
           <Box color="white" padding={1}>
           <Box color="white" paddingY={2}>
-            <Box marginBottom={7}>
+            <span>
              <Heading size="sm">회사 정보 관리</Heading>
-            </Box>
-            <Box marginBottom={3}>
+            </span>
+            <span>
              <Heading size="xs">이 페이지에서 관리하는 정보는 우리 회사 채용 홈페이지의 내용이 됩니다.</Heading>
-            </Box>
+            </span>
           </Box>
 
           
@@ -145,41 +145,20 @@ class CompanyInfoAdminPage extends React.Component {
 
           <hr />
 
-            <Box marginLeft={3}>
-              <Text bold inline size="md">채용 홈페이지 레이 아웃(Lay out) 선택</Text>
-            </Box>  
-
-            <Box marginBottom={5}>
-              <RadioBtnGroup />
-            </Box>
-
-            <Box display="flex" direction="row">
-              <Column span={8}>
-                <Box color="darkGray" padding={2}>
-                  <Text color ="white"> 임시 </Text>
-                  <Box height={200} />
-                  <Text color ="white">With lots of content </Text>
-                </Box>
-               </Column>                 
-            </Box>
+          <RadioBtnGroup />
 
 
-          <Box display="flex" direction="row">
-            <Column span={8}>
-              <Box color="red" padding={8}>
-                <Link>
-                  <Button 
-                  text="저장/ 수정 확인" inline />
-                </Link>
-              </Box>
-            </Column>
+         
+          <Box padding={2}>
+            <Button text="수정/ 확인" inline />
           </Box>
-
-
-        </Box>        
+        </Box>
+        
       </Box>
       </Column>
     </Box>
+
+  
     </div>
 
     );
