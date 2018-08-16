@@ -27,6 +27,8 @@ import "gestalt/dist/gestalt.css";
                       </Label>
                     </Box>
                   </Box>
+
+                
                   <Box alignItems="center" paddingY={1} display="flex" direction="row">
                     <RadioButton size="md"
                       checked={this.state.viewmode === 'vertical'}

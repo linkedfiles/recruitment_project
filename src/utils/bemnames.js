@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 
-export const createBEM = namespace => {
+const createBEM = namespace => {
   return {
     create: blockName => {
       let block = blockName;

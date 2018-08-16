@@ -74,6 +74,10 @@ class TopNavbar extends React.Component {
               <NavItem>
                 <NavLink href="/emailjoin">EmailJoin</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/memberinfopage">MemberInfoPage</NavLink>
+              </NavItem>
+
               <UncontrolledDropdown nav inNavbar style={{ minWidth: 200 }}>
                 <DropdownToggle nav caret>
                   Options

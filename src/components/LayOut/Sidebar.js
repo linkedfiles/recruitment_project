@@ -21,7 +21,7 @@ class Sidebar extends React.Component {
       <Box paddingY={2}>
         <Box>
           <Text align="center" color="white">
-            <Link href="/compnayinfoadmin">
+            <Link href="/companyadminpage">
               <Box padding={2}>회사 정보 관리</Box>
             </Link>
           </Text>
@@ -53,7 +53,7 @@ class Sidebar extends React.Component {
 
         <Box>
           <Text align="center" color="white">
-            <Link href="/memberinfoadmin">
+            <Link href="/memberinfopage">
               <Box padding={2}>회원 정보 관리</Box>
             </Link>
           </Text>

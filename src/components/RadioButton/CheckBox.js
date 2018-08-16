@@ -5,7 +5,7 @@ import "gestalt/dist/gestalt.css";
 class CheckBox extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { checked: true };
+    this.state = { checked: false };
     this.handleChecked = this._handleChecked.bind(this);
   }
   _handleChecked({ checked }) {
