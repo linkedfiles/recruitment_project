@@ -1,0 +1,14 @@
+{
+    "usercard": [
+                  {"id" : 0, "userimg" : "http://t1.daumcdn.net/liveboard/_profile/2a3452cf6ffb4f6291faad65ec7c7d15.png", "username" : "박보검", "useremail" : "abc@company.com", "rank": "master", "invited_date" : "2018년 8월 5일"},
+                  {"id" : 1, "userimg" : "http://t1.daumcdn.net/liveboard/_profile/2a3452cf6ffb4f6291faad65ec7c7d15.png", "username" : "이병헌", "useremail" : "dfe@company.com", "rank": "member", "invited_date" : "2018년 8월 8일"},
+                  {"id" : 2, "userimg" : "http://t1.daumcdn.net/liveboard/_profile/2a3452cf6ffb4f6291faad65ec7c7d15.png", "username" : "김성철", "useremail" : "ghi@company.com", "rank": "member", "invited_date" : "2018년 8월 16일"},
+                  {"id" : 3, "userimg" : "http://t1.daumcdn.net/liveboard/_profile/2a3452cf6ffb4f6291faad65ec7c7d15.png", "username" : "최지용", "useremail" : "jkl@company.com", "rank": "member", "invited_date" : "2018년 7월 22일"}
+                ],
+
+
+    "memberinfo":  [
+                     {"id": 0, "company_name" : "STDIO.H", "rank" : "master", "username" : "송중기", "useremail": "abc@company.com", "user_phone_number" : "010-1111-2222", "department" : "금융개발5팀"},
+                     {"id": 1, "company_name" : "Ressed",  "rank" : "recruiter", "username" : "박보검", "useremail": "zzd@company.com", "user_phone_number" : "010-2211-1590", "department" : "금융개발3팀"}
+                ]
+}
