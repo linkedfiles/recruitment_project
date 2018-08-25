@@ -5,14 +5,18 @@
 const db = require('./server/database')
 // 웹 서버를 실행
 const express = require('express')
+const fs = require('fs')
+var cors = require('cors');
 const app = express()
-const portNo = 5000
+const portNo = 3001
+
+app.use(cors());
+
 app.listen(portNo, () => {
   console.log('서버 실행 완료:', `http://localhost:${portNo}`)
 })
 
 //API 정의 //
-
 app.get('/api/adduser', (req, res) => {
   const userid = req.query.userid
   const passwd = req.query.passwd
@@ -46,3 +50,10 @@ app.get('/api/login', (req, res) => {
   })
  })
 })
+//로그인 시 가입 여부 판별
+app.post('/api/v1/users/login', (req, res) => {
+  fs.readFile(__dirname + '/client/src/json/' + 'Login.json', 'utf8', (err, data) => {
+      if (err) res.status(500).json({"status" : 500, "error": err, "response": null});
+      else res.status(200).json(JSON.parse(data));
+  });
+});

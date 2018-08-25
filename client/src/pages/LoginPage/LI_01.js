@@ -1,8 +1,18 @@
 import React from 'react';
 import { AvForm, AvField } from 'availity-reactstrap-validation';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import request from 'superagent';
 
 export default class LI_01 extends React.Component {
+
+  componentDidMount(){
+    request
+      .post('http://localhost:3001/api/v1/users/login')
+      .accept('application/json')
+      .then(res => {
+        alert(JSON.stringify(res.body));
+      })
+  }
   render() {
     const modalError = this.state.error ? '실패' : '성공';
     return (
@@ -11,7 +21,7 @@ export default class LI_01 extends React.Component {
           <AvField name="email" label="이메일" type="email" placeholder="abc@companym.com" required />
           <AvField name="password" label="비밀번호" type="password" placeholder="password" required /> 
           {/* availity reactstrap password 정규표현식 수정 */}
-          <Button size="lg" color="primary">로그인</Button>
+          <Button onClick={this.componentDidMount} size="lg" color="primary">로그인</Button>
         </AvForm>
         <Modal isOpen={this.state.email !== false} toggle={this.closeModal}>
           <ModalHeader toggle={this.closeModal}> {modalError} </ModalHeader>

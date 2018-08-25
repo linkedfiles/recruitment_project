@@ -9,6 +9,7 @@
   "dependencies": {
     "availity-reactstrap-validation": "^2.0.6",
     "axios": "^0.18.0",
+    "cors": "^2.8.4",
     "dot-env": "^0.0.1",
     "dotenv": "^6.0.0",
     "dotenv-expand": "^4.2.0",
