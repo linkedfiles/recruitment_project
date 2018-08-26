@@ -19,13 +19,13 @@ export default class LI_01 extends React.Component {
     this.isemailValid = this.isemailValid.bind(this);
   }
 
-  componentWillMount(){
+  componentDidMount() {
     request
-      .post('http://localhost:3001/api/v1/users/login')
-      .accept('application/json')
-      .end((err, res) => {
-        this.loadedJSON(err, res)
-      })
+    .post('http://localhost:3001/api/v1/users/login')
+    .accept('application/json')
+    .end((err, res) => {
+      this.loadedJSON(err, res)
+    })
   }
 
   loadedJSON(err, res) {
@@ -37,7 +37,6 @@ export default class LI_01 extends React.Component {
       logininfo: res.body
     })
   }
-
 
   toggle() {
     this.setState({
