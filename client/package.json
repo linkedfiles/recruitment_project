@@ -6,6 +6,7 @@
     "@ckeditor/ckeditor5-build-classic": "^11.0.1",
     "@ckeditor/ckeditor5-react": "^1.0.0-beta.1",
     "@trendmicro/react-sidenav": "^0.4.5",
+    "all": "^0.0.0",
     "autoprefixer": "^7.1.6",
     "availity-reactstrap-validation": "^2.0.6",
     "babel-eslint": "7.2.3",
