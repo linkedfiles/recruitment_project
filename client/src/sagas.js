@@ -1,5 +1,5 @@
-import { call, put, takeEvery, takeLatest } from "redux-saga/effects";
-
+import { call, put, takeEvery, takeLatest, fork, all } from "redux-saga/effects";
+import { sagas as modalSaga } from "redux-saga-modal";
 import { REQUEST_API_DATA, receiveApiData } from "./actions";
 import { fetchData } from "./api";
 
@@ -21,5 +21,5 @@ function* getApiData(action) {
   and only the latest one will be run.
 */
 export default function* mySaga() {
-  yield takeLatest(REQUEST_API_DATA, getApiData);
+  yield takeLatest(REQUEST_API_DATA, getApiData)
 }

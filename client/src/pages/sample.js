@@ -1,8 +1,8 @@
 import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-
-import { requestApiData } from "../actions"
+import { isNullOrUndefined } from "util";
+import {requestApiData } from "../actions"
 
 class Sample extends React.Component {
   componentDidMount() {
@@ -24,12 +24,12 @@ class Sample extends React.Component {
     </div>;
 
   render() {
-    const { results = [] } = this.props.data;
-    return results.length
-      ? <h1>
-          {results.map(this.person)}
-        </h1>
-      : <h1>loading...</h1>;
+    const result = this.props.data
+    console.log(isNullOrUndefined(this.props.data.data))
+    return(
+      <h1>
+      </h1>
+    )
   }
 }
 
