@@ -1,93 +1,52 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom';
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { Redirect } from 'react-router-dom';
 import { Button, Table, Modal, ModalHeader, ModalBody } from 'reactstrap';
-import request from 'superagent';
-import { isEmpty } from 'util';
+import { requestApiData } from "../../actions";
+import { isUndefined } from 'util';
 
-export default class JI_04 extends React.Component {
+
+class JI_04 extends React.Component {
   constructor(props){
     super(props);
-    this.state={companyinfo:{}, logininfo:{}, invitemodal: false, acceptmodal:false, jump:'' };
-    this.companyType = this.companyType.bind(this);
-    this.inviteToggle = this.inviteToggle.bind(this);
-    this.acceptToggle = this.acceptToggle.bind(this);
+    this.state={ modal:false, invitemodal: false, acceptmodal:false, jump:'' };
   }
-  componentWillMount(){
-    request
-      .post('http://localhost:3001/api/v1/users/login')
-      .accept('application/json')
-      .end((err, res) => {
-        this.loadedJSON2(err,res)
-      })
-    request
-      .get('http://localhost:3001/api/v1/users/'+this.state.logininfo._id+'/Companies')
-      .accept('application/json')
-      .end((err, res) => {
-        this.loadedJSON(err,res)
-      })
-    }
-
-  loadedJSON(err, res){
-    if(err) {
-      console.log('JSON을 읽어 들이는 동안 오류가 발생했습니다.')
-      return
-    }
-    this.setState({
-      companyinfo: res.body
-    })
+  componentDidMount(){
+    this.props.requestApiData();
   }
 
 
-  loadedJSON2(err, res){
-    if(err) {
-      console.log('JSON을 읽어 들이는 동안 오류가 발생했습니다.')
-      return
-    }
-    this.setState({
-      logininfo: res.body
-    })
-  }
 
-  inviteToggle(){
-    this.setState({invitemodal: !this.state.invitemodal })
+  shouldComponentUpdate(nextProps, nextState){
+    console.log(JSON.stringify(nextState))
+    return true;
   }
-  
-  acceptToggle(){
-    this.setState({acceptmodal: !this.state.acceptmodal})
-  }
-
-  companyType(){
-      if(false){
-       this.setState({invitemodal: !this.state.invitemodal})
-      }
-      else{
-        this.setState({jump: '/guidepage'})
-      }
-  }
-
   render() {
-    console.log(this.state.invitemodal)
     if (this.state.jump) {
       return <Redirect to={this.state.jump} />
     };
+
+    console.log(this.props.data)
+    console.log(this.state.modal)
     return (
       <div>
-        <Modal isOpen={this.state.invitemodal} onClosed={this.inviteToggle}>
+        <Modal isOpen={this.state.modal}>
           <ModalHeader>
             멤버 참여 여부 결정
           </ModalHeader>
           <ModalBody>
             채용게시판에 초대 받으셨습니다. 아래의 동의 버튼을 클릭하면 해당 게시판에 참여하게 됩니다.
-            <Button onClick={this.inviteToggle}>예, 참여하겠습니다.</Button>
+            <Button>예, 참여하겠습니다.</Button>
           </ModalBody>
         </Modal>
-        <Modal isOpen={this.state.acceptmodal} toggle={this.acceptToggle}>
+        <Modal>
           <ModalHeader>
             아직, 참여가 확인되지 않았습니다.
           </ModalHeader>
           <ModalBody>
             아직 참여가 허용되지 않은 상태입니다. 해당 회사 마스터등급자의 승인 이후 이용하실 수 있습니다.
-            <Button onClick={this.accpetToggle}>확인</Button>
+            <Button>확인</Button>
           </ModalBody>
         </Modal>
         
@@ -154,3 +113,10 @@ export default class JI_04 extends React.Component {
     );
   }
 }
+
+const mapStateToprops = state => ({ data: state.data })
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ requestApiData }, dispatch);
+
+export default connect(mapStateToprops, mapDispatchToProps)(JI_04);
