@@ -192,7 +192,8 @@ module.exports = {
               {
                 loader: require.resolve("sass-loader"),
                 options: {
-                  includePaths: [path.styles]
+                  includePaths: [path.styles],
+                  data: '$"{paths.appSrc}/config/_variables.scss";'
                 }
               }
             ]

@@ -1,5 +1,6 @@
 {
     "companies1" : [
+        { "company_id" : 3 }
     ],
     "companies2" : [
         { "company_id" : 3 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import request from 'superagent';
 import {Redirect} from 'react-router-dom';
-import { AvForm, AvField, AvGroup, AvInput, AvFeedback, AvRadioGroup, AvRadio } from 'availity-reactstrap-validation';
-import { Collapse, Card, CardBody, Button, Label, FormGroup } from 'reactstrap';
+import { AvForm, AvField, AvGroup, AvInput } from 'availity-reactstrap-validation';
+import { Collapse, Card, CardBody, Button, Label } from 'reactstrap';
 
 
 export default class EmailJoin extends React.Component {
@@ -83,13 +83,9 @@ export default class EmailJoin extends React.Component {
               <AvInput type="checkbox" name="checkItOut" /> 이용약관
             </Label>
           </AvGroup>
-          
-          <FormGroup>
-            <Button onClick={showCollapse}>가입</Button>
-          </FormGroup>
         </AvForm>
 
-          <button onClick={e => this.api('adduser')}>로그인</button><br />
+          <button onClick={e => this.api('adduser')}>가입</button><br />
         {this.state.values && <div>
           <h5>json</h5>
           Invalid: {this.state.errors.join(', ')}<br />

@@ -17,4 +17,4 @@ const DashBoardPage = (props) => {
   );
 };
 
-export default DashBoardPage;
+export default DashBoardPage; 

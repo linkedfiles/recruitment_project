@@ -1,15 +1,25 @@
-import React from 'react';
-import { AvForm, AvField, AvGroup, AvInput, AvFeedback, AvRadioGroup, AvRadio, FormFeedback } from 'availity-reactstrap-validation';
+import React from "react";
+
+import { AvForm, AvGroup, AvInput, AvFeedback } from 'availity-reactstrap-validation';
 import { Button, Label, FormGroup } from 'reactstrap';
 
 import { BussiReg } from "components/PopUp"
 
+
+
+
+
+
+ 
 export default class JI_02 extends React.Component {
   constructor(props) {
     super(props);
 
     this.handleInvalidSubmit = this.handleInvalidSubmit.bind(this);
     this.state = {};
+    
+
+
   }
 
   handleInvalidSubmit(event, errors, values) {
@@ -46,6 +56,8 @@ export default class JI_02 extends React.Component {
           Values: <pre>{JSON.stringify(this.state.values, null, 2)}</pre>
         </div>}
       </div>
+
+      
     );
   }
 }
