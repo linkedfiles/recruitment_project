@@ -20,13 +20,15 @@ function saveToken(token) {
   }
 
 
-  function logout() {
-      return {
-          type: LOGOUT
-      };
+function logout() {
+    return {
+        type: LOGOUT
+    };
   }
 
-
+function createAccount(email, name, password) {
+    return dispatch
+}
 
 // API actions
 function usernameLogin(username, password) {
