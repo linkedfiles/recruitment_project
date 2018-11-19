@@ -7,9 +7,6 @@ import App from "components/App";
 import I18n from "redux-i18n";
 import { translations } from "translations";
 
-//import 'gestalt/dist/gestalt.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-
 
 
 ReactDOM.render(

@@ -12,10 +12,11 @@ import JI_04 from "components/JI_04";
 
 
 import TopNavbar from "../TopNavbar.js";
-
+import Header from "components/Header";
+import "./styles.scss";
  
 const App = props => [
-  props.isLoggedIn ? <TopNavbar key={1}/> : null,
+  props.isLoggedIn ? <Header key={1}/> : <Header key={1}/>,
   props.isLoggedIn ?  <PrivateRoutes key={2} /> : <PublicRoutes key={2} />,
 ];
 

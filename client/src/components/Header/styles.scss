@@ -1,0 +1,111 @@
+
+
+.navigation {
+  width:100%;
+  display: flex;
+  height: 88px;
+  background-color: #323335;
+  border: none;
+  
+
+ 
+.inner {
+ display: flex;
+ justify-content: center;
+ height: 88px;
+ margin: auto;
+ max-width: 1280px;
+
+ .logocolumn{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 170px;
+
+
+   .logo {
+     width:90px;
+     height:20px;
+     margin-left: 40px;
+     margin-right: 40px;
+   }
+   
+ }
+
+
+
+ .join_login_column{
+   width: 180px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   //margin-right: 38px;
+   margin-left:150px;
+   .navmenu_login {
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: bold;
+    
+     
+      
+    }
+    .or{
+     font-display: white;
+     color: white;
+     align-items: center;
+     font-size: 16px;
+     font-weight: bold;
+     line-height: 21px;
+     margin-left:5px;
+     margin-right: 5px;
+    }
+ }
+ .menucolumn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 565px;
+
+      .navmenu1 {
+        font-size: 15px;
+        line-height: 19px;
+        margin-left: 105px;
+        margin-right: 94px;
+        font-weight: bold;
+
+        
+      }
+      .navmenu2 {
+       align-items: center;
+       font-size:15px;
+       line-height: 19px;
+       margin-right: 88px;
+       font-weight: bold;
+       
+      }
+
+      .navmenu3 {
+       align-items: center;
+       font-size:15px;
+       line-height: 19px;
+       margin-right: 10px;
+       font-weight: bold;
+       
+
+      }
+
+     
+   }
+
+   .space_column{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 377px;
+     
+     
+   }
+     
+ }
+
+}

@@ -1,0 +1,48 @@
+.content {
+    width: 986px;
+    height: 537px;
+    margin: 80px 135px 92px 159px;
+    border-radius: 8px;
+    background-color: $bg-color;
+}
+
+.logopage{
+    width: 481px;
+    height: 100%;
+    background-color: #0e2b57;
+    border-width: 1px;
+    border-color: $border-color;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    float: left;
+    .welcome{
+        width: 125px;
+        height: 22px;
+        padding: 203px 178px 312px 178px;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.28;
+        letter-spacing: normal;
+        text-align: left;
+        color:#ffffff
+    }
+}
+
+.loginpage{
+    width: 505px;
+    height: 100%;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: $border-color;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    float: right;
+
+    form{
+        .login{
+            padding: 96.5px 115px 263px 124.2px;
+        }
+    }
+}

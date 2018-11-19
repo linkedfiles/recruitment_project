@@ -1,24 +1,63 @@
 //사용할 헤더 밑작업
 
 import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import styles from "./styles.scss";
 
 
 const Header = (props, context) => (
-    <header className={styles.header}>
-        <div className={styles.column}>
-          <nav>
-            <ul>
-              <li className={styles.listItem}>대시보드</li>
-              <li className={styles.listItem}>지원자 관리</li>
-              <li className={styles.listItem}>메시지함</li>
-            </ul>
-         </nav>
-        </div>
-        <div>  
-            <span>usericon</span>
-        </div>
-    </header>   
+    <div className={styles.navigation}>
+        <div className={styles.inner}>
+          <div className={styles.logocolumn}> 
+              <Link to="/recover">
+              <img
+                 src={require("assets/img/logo.png")}
+                 className={styles.logo}
+               />
+               </Link>
+           </div>
+             <div className={styles.menucolumn}>
+              <div className={styles.navmenu1}>
+                <Link to ="/recover" style={{ color: '#FFF' , textDecoration: 'none' }}>
+                  대시보드
+                </Link>
+              </div>
+              <div className={styles.navmenu2}>
+                <Link to ="/" style={{ color: '#FFF', textDecoration: 'none' }}>
+                  지원자 관리
+                </Link>
+              </div>
+              <div className={styles.navmenu3}>
+                <Link to ="/" style={{ color: '#FFF', textDecoration: 'none' }}>
+                  메세지함
+                </Link>
+              </div>
+          </div>
+
+            <div className={styles.space_colum1n}>  </div>
+
+            <div className={styles.join_login_column}>
+              <div className={styles.navmenu_login}> 
+                <Link to = "/" style={{ color: '#FFF', textDecoration: 'none' }}>
+                회원가입
+                </Link> 
+              </div>
+              <div className={styles.or}> | </div> 
+
+              <div className={styles.navmenu_login}>
+                <Link to = "/" style={{ color: '#FFF', textDecoration: 'none' }}>
+                  로그인
+                </Link> 
+              </div>
+           </div>
+
+            </div>
+          
+          </div> 
+         
+     
+        
 );
 
 export default Header;

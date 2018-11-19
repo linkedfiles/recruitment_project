@@ -26,9 +26,9 @@ function logout() {
     };
   }
 
-function createAccount(email, name, password) {
+/*function createAccount(email, name, password) {
     return dispatch
-}
+}*/
 
 // API actions
 function usernameLogin(username, password) {
