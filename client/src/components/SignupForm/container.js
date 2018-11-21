@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import SignupFrom from "./presenter";
+import SignupForm from "./presenter";
 
 class Container extends Component {
     state = {
@@ -16,7 +16,7 @@ class Container extends Component {
     render() {
         const { email, name, password, repassword } = this.state;
         return(
-            <SignupFrom emailValue={email} passwordValue={password} repasswordValue={repassword} nameValue={name} handleInputChange={this._handleInputChange} handleSubmit={this._handleSubmit}/>
+            <SignupForm emailValue={email} passwordValue={password} repasswordValue={repassword} nameValue={name} handleInputChange={this._handleInputChange} handleSubmit={this._handleSubmit} />
         );
     }
 
@@ -33,3 +33,5 @@ class Container extends Component {
         createAccount(email, name, password);
     }
 }
+
+export default Container;

@@ -1,0 +1,118 @@
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+.content {
+    width: 986px;
+    height: 537px;
+    margin: 80px 135px 92px 159px;
+    border-radius: 8px;
+    background-color: $bg-color;
+}
+
+.logopage{
+    width: 481px;
+    height: 100%;
+    background-color: #0e2b57;
+    border-width: 1px;
+    border-color: $border-color;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    float: left;
+    .welcome{
+        width: 125px;
+        height: 22px;
+        padding: 203px 178px 312px 178px;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.28;
+        letter-spacing: normal;
+        text-align: left;
+        color:#ffffff
+    }
+}
+
+.loginpage{
+    width: 505px;
+    height: 100%;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-color: $border-color;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    float: right;
+
+    .textbox{
+        margin-top: 155.5px;
+        margin-right: auto;
+        margin-bottom: 15px;
+        margin-left: auto;
+        font-size: 22px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.82;
+        letter-spacing: normal;
+        text-align: center;
+        color: #323335;
+    }
+    
+    .formComponent {
+        width: 77.2%;
+        margin-top: 15px;
+        margin-right: 55.5px;
+        margin-left: 60.5px;
+        margin-bottom: 183px;
+
+        .form {
+            .inputbox{
+                width: 98%;
+                margin: 33px auto 0px auto;
+            }
+            .col30{
+                width: 30%;
+                float: left;
+                padding: 8px 0px 8px 0px;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.21;
+                letter-spacing: normal;
+                text-align: left;
+                color: #323335;   
+            }
+            .col70{
+                width: 70%;
+                float: right;
+            }
+            input[type="text"]{
+                width: 100%;
+                height: 30.6px;
+                border-radius: 2px;
+                background-color: #ffffff;
+            }
+            .button {
+                width: 67.6%;
+                height: 34.8px;
+                margin: 57px 67.6px 0px 67.6px;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+                background-color: #1592e6;
+                padding: 8.5px 104.7px 9.3px 109px;
+                font-size: 13px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.23;
+                letter-spacing: 0.3px;
+                text-align: left;
+                white-space: nowrap;
+                color: #ffffff;
+            }
+        }
+    }
+}

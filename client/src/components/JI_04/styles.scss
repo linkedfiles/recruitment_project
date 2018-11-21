@@ -1,0 +1,131 @@
+
+
+.ji04 {
+    margin:auto;
+    margin-top: 55px;
+    width : 1160px;
+    height: 607px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display:flex;
+
+    .column1{
+        width:290px;
+        height:607px;
+        margin-top: 68.5px;
+
+        .step01{
+            width: 74px;
+            height: 28px;
+            font-size:22px;
+            font-weight: bold;
+            line-height: 0.82;
+            letter-spacing: normal;
+            color: #323335;
+            margin-left: 148px;
+            margin-right: 74px;
+
+        }
+        .step02{
+            width: 74px;
+            height: 28px;
+            font-size:22px;
+            font-weight: bold;
+            line-height: 0.82;
+            letter-spacing: normal;
+            color: #323335;
+            margin-top: 149px;
+            margin-left: 148px;
+            margin-right: 74px;
+        }
+    }
+        .column2{
+            width: 870px;
+            height:607px;
+            margin-right:139px;
+
+            .content1{
+                width: 731px;
+                height: 36px;
+                font-size:13px;
+                font-weight:500;
+                font-stretch:normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #323335;
+                margin-top: 68.5px;
+
+            }
+
+            .content2 {
+                width: 320px;
+                height: 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #323335;
+                margin-top: 19px;
+            }
+
+            
+
+            .content3 {
+                margin-top: 102px;
+                width: 724px;
+                height: 78px;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #323335;
+              
+              }
+
+              .type01 {
+                border-collapse: collapse;
+                text-align: center;
+                line-height: 1.13;
+                width: 723px;
+                height: 157px;
+                
+
+                .th{
+                    width: 200px;
+                    padding: 7px;
+                    font-weight: bold;
+                    vertical-align: top;
+                    border: 1px solid #707070;
+                    font-size: 13px;
+                }
+
+                .main_th{
+                    width: 190px;
+                    padding: 7px;
+                    font-weight: bold;
+                    vertical-align: top;
+                    border: 1px solid #707070;
+                    font-size: 16px;
+                    background-color: #ebeaea;
+                }
+
+                .td{
+                    width: 350px;
+                    padding: 7px;
+                    vertical-align: top;
+                    border: 1px solid  #707070;
+                    text-align: center;
+                }
+                
+            }
+           
+
+              }
+
+           
+
+            }
+
+        
+        
+
+            
+

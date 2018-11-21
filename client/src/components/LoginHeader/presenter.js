@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 import styles from "./styles.scss";
 
 
-const Header = (props, context) => (
+const LoginHeader = (props, context) => (
     <div className={styles.navigation}>
         <div className={styles.inner}>
           <div className={styles.logocolumn}> 
-              <Link onClick={this.forceUpdate} to={'/recover'}>
+              <Link onClick={this.forceUpdate} to={'/'}>
               <img
                  src={require("assets/img/logo.png")}
                  className={styles.logo}
@@ -40,17 +40,13 @@ const Header = (props, context) => (
 
             <div className={styles.join_login_column}>
               <div className={styles.navmenu_login}> 
-                <Link to = "/signup" style={{ color: '#FFF', textDecoration: 'none' }}>
-                회원가입
-                </Link> 
+                <img
+                 src={require("assets/img/user-icon.png")}
+                 className={styles.usericon}
+                 
+               />  
               </div>
-              <div className={styles.or}> | </div> 
-
-              <div className={styles.navmenu_login}>
-                <Link to = "/" style={{ color: '#FFF', textDecoration: 'none' }}>
-                  로그인
-                </Link> 
-              </div>
+              
            </div>
 
             </div>
@@ -61,4 +57,4 @@ const Header = (props, context) => (
         
 );
 
-export default Header;
+export default LoginHeader;

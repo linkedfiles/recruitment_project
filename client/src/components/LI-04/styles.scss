@@ -1,0 +1,178 @@
+.li04{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    margin-top: 103px;
+    .column{
+            
+            display: flex;
+            width: 100%;
+            margin: auto;
+            width: 1280px;
+        .box1{
+            margin-left:75px;
+            margin-right: 26px;
+            width: 330px;
+            height: 440px;
+            background-color: #ffffff;
+            
+            
+            .box_container1{
+                    justify-content: center;
+                    width: 316px;
+                    height: 426px;
+                    border: 1px solid #1592e6;
+                    margin: 7px;
+                    align-content: center;
+
+                .image1{
+                        width: 120px;
+                        height: 105px;
+                        margin-top: 98px;
+                        margin-left: 95px;
+                        margin-right:95px;
+                        margin-bottom: 50px;
+                        border: 1px solid black;
+                }
+
+                .head1{
+                    font-size:20px;
+                    font-weight:bold;
+                    font-style:normal;
+                    font-stretch:normal;
+                    line-height:1.25;
+                    letter-spacing:normal;
+                    text-align:center;
+                    color: #053b69;
+                }
+    
+           
+                .content1{
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                text-align: center;
+                color: #464646;
+                margin-top: 15px;
+                margin-bottom: 74px;
+                }
+            }    
+        }
+
+        .triangle{
+            margin-top: 200px;
+            width: 0px;
+            height: 0px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 27px solid #1592e6;
+        }
+
+        .box2{
+            margin-left: 26px;
+            margin-right: 26px;
+            width: 330px;
+            height: 440px;
+            background-color: white;
+            .box_container2{
+                justify-content: center;
+                width: 316px;
+                height: 426px;
+                border: 1px solid #1592e6;
+                margin: 7px;
+                align-content: center;
+
+                .image2{
+                    width: 120px;
+                    height: 105px;
+                    margin-top: 98px;
+                    margin-left: 95px;
+                    margin-right:95px;
+                    margin-bottom: 50px;
+                    border: 1px solid black;
+                }
+
+                .head2{
+                font-size:20px;
+                font-weight:bold;
+                font-style:normal;
+                font-stretch:normal;
+                line-height:1.25;
+                letter-spacing:normal;
+                text-align:center;
+                color: #053b69;
+             }
+
+       
+                .content2{
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                text-align: center;
+                color: #464646;
+                margin-top: 15px;
+                margin-bottom: 74px;
+                }
+           }    
+        
+        }
+
+        .box3{
+            margin-left: 26px;
+            margin-right: 76px;
+            width: 330px;
+            height: 440px;
+            background-color: white;
+            .box_container3{
+                justify-content: center;
+                width: 316px;
+                height: 426px;
+                border: 1px solid #1592e6;
+                margin: 7px;
+                align-content: center;
+
+                .image3{
+                    width: 120px;
+                    height: 105px;
+                    margin-top: 98px;
+                    margin-left: 95px;
+                    margin-right:95px;
+                    margin-bottom: 50px;
+                    border: 1px solid black;
+            }
+
+                .head3{
+                    font-size:20px;
+                    font-weight:bold;
+                    font-style:normal;
+                    font-stretch:normal;
+                    line-height:1.25;
+                    letter-spacing:normal;
+                    text-align:center;
+                    color: #053b69;
+            }
+
+       
+                .content3{
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                text-align: center;
+                color: #464646;
+                margin-top: 15px;
+                margin-bottom: 74px;
+                }
+            }    
+        }
+    }
+
+}

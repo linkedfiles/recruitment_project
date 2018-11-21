@@ -43,79 +43,70 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     float: right;
-
+    
     .formComponent{
-        width: 265.8px;
-        height: 177.6px;
-        margin: 96.5px 115px 14.2px 124.2px;
+        width: 53%;
+        margin: 43.5px auto 160px auto;
         .form{
-            input[type="text"]{
-                width: 265.8px;
-                height: 30.6px;
-                margin: 5.2px 0px 16.6px 0px;
-                border-radius: 2px;
-                background-color: #ffffff;
+            
+            .inputbox{
+                width: 100%;
+                margin: 11.6px auto 0px auto;
             }
-            input[type="password"]{
-                width: 265.8px;
+            
+            input[type="text"], input[type="password"], input[type="email"]{
+                width: 100%;
                 height: 30.6px;
-                margin: 5.2px 0px 16.6px 0px;
+                margin: 6px auto 0px auto;
                 border-radius: 2px;
-                background-color: #ffffff;
+            }
+            input::placeholder{
+                font-size: 10px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.2;
+                letter-spacing: 0.2px;
+                text-align: left;
+                color: #9a9a9a;
             }
             label{
                 width: 100%;
-                padding-bottom: 5.2px;
-                font-size: 16px;
+                font-size: 12px;
                 font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
-                line-height: 1.19;
+                line-height: 1.25;
                 letter-spacing: normal;
                 text-align: left;
-                color: #525355;
+                color: #323335;
+            }
+            
+            .button{
+                width:99%;
+                height: 34.8px;
+                margin: 57px auto 26px auto;
+                background-color: #1592e6;
+                padding: 9.5px 125px 9.5px 116px;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                font-size: 13px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.23;
+                letter-spacing: 0.3px;
+                text-align: left;
+                color: #ffffff;
+                white-space: nowrap;
             }
         }
-
-
-        .button {
-            width: 263.7px;
-            height: 34.8px;
-            margin: 0px 1.1px 14.2px 1.1px;
-            border: 1px solid transparent;
-            border-radius: 5px;
-            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
-            background-color: #1592e6;
-            padding: 8.5px 104.7px 9.3px 109px;
-            font-size: 13px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.23;
-            letter-spacing: 0.3px;
-            text-align: left;
-            color: #ffffff;
-        }
     }
 
-    .findPassword{
-        width: 63px;
-        height: 14px;
-        margin: 14.2px 216.4px 39.7px 225.6px;
-        font-size: 11px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.18;
-        letter-spacing: normal;
-        text-align: left;
-        display: inline-block;
-        white-space: nowrap;
-    }
     .SNS{
-        width: 83px;
+        width: 31%;
         height: 14px;
-        margin: 0px 206.4px 11.3px 215.6px;
+        margin: 0px auto 6px auto;
         font-size: 11px;
         font-weight: bold;
         font-style: normal;
@@ -128,9 +119,9 @@
     }
 
     .googlebutton{
-        width: 264.8px;
-        height: 34.8px;
-        margin: 0px 115px 6.2px 125.2px;
+        width: 100%;
+        height: 35px;
+        margin: 0px auto 6px auto;
         border: 1px solid transparent;
         border-radius: 3px;
         background-color: #f81102;
@@ -144,14 +135,13 @@
         text-align: left;
         color: #ffffff;
     }
-
     .linkdinbutton{
-        width: 264.8px;
-        height: 34.8px;
-        margin: 0px 115px 94px 125.2px;
+        width: 100%;
+        height: 35px;
+        margin: 0px auto 6px auto;
         border: 1px solid transparent;
         border-radius: 3px;
-        background-color: #0f5b87;
+        background-color: #0f5b87;        ;
         padding: 8.5px 106.7px 8.3px 105px;
         font-size: 15px;
         font-weight: bold;
