@@ -1,6 +1,23 @@
-$bg-color: #414141;
-$dark-blue: #003569;
-$light-blue: #3897f0;
-$dark-grey: #999;
-$border-color: #707070;
-$light-grey: #efefef;
+/* input 설정값 */
+$input-disabled-text: rgb(108, 117, 125) !important;
+$input-disabled-background: rgb(221, 221, 221) !important;
+$input-border: rgb(112, 112, 112);
+$input-valid-background: rgb(40, 167, 69);
+$input-invalid-background: rgb(255, 0, 0);
+
+/* button 설정값 */
+$button-disabled-text: rgb(108, 117, 125) !important;
+$button-disabled-background: rgb(221, 221, 221) !important;
+$button-disabled-border: rgb(221, 221, 221) !important;
+
+$button-blue-text: rgb(255, 255, 255);
+$button-blue-background: rgb(21, 146, 230);
+$button-blue-border: rgb(21, 146, 230);
+
+$button-red-text: rgb(255, 255, 255);
+$button-red-background: rgb(248, 17, 2);
+$button-red-border: rgb(2248, 17, 2);
+
+$button-darkblue-text: rgb(255, 255, 255);
+$button-darkblue-background: rgb(15, 91, 135);
+$button-darkblue-border: rgb(15, 91, 135);

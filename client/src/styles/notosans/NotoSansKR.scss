@@ -1,0 +1,67 @@
+$noto-sans-path : '../assets/font/notosanskr';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(#{$noto-sans-path}/NotoSansKR-Thin.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: local(''),
+  url(#{$noto-sans-path}/NotoSansKR-Thin.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Thin.woff) format('woff'),  /* IE 9+, 모던 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Thin.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(#{$noto-sans-path}/NotoSansKR-Light.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: local(''),
+  url(#{$noto-sans-path}/NotoSansKR-Light.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Light.woff) format('woff'),  /* IE 9+, 모던 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Light.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(#{$noto-sans-path}/NotoSansKR-Regular.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: local(''),
+  url(#{$noto-sans-path}/NotoSansKR-Regular.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Regular.woff) format('woff'),  /* IE 9+, 모던 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url(#{$noto-sans-path}/NotoSansKR-Medium.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: local(''),
+  url(#{$noto-sans-path}/NotoSansKR-Medium.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Medium.woff) format('woff'),  /* IE 9+, 모던 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Medium.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(#{$noto-sans-path}/NotoSansKR-Bold.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: local(''),
+  url(#{$noto-sans-path}/NotoSansKR-Bold.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Bold.woff) format('woff'),  /* IE 9+, 모던 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Bold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(#{$noto-sans-path}/NotoSansKR-Black.eot); /* IE 6 ~ 8, IE 호환성 보기 */
+  src: local(''),
+  url(#{$noto-sans-path}/NotoSansKR-Black.woff2) format('woff2'), /* IE Edge, WOFF2 지원 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Black.woff) format('woff'),  /* IE 9+, 모던 브라우저 */
+  url(#{$noto-sans-path}/NotoSansKR-Black.ttf) format('opentype');
+}

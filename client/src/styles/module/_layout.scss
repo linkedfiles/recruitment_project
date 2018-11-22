@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $font-kr-sans, "dotum", "AppleGothic", sans-serif;
+}
+
+.none {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: $wide-max-width;
+  margin: 0 auto;
+}
+
+
+/* modal */
+.modal {
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  background: rgba(0,0,0,.75);
+  -webkit-user-select:none;
+  -webkit-touch-callout:none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  overflow-y: visible !important;
+
+  &.no-back {
+    background: none;
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    max-width: $wide-max-width;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    background: rgb(255,255,255);
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 12px;
+
+    .popup-contents {
+      position:relative;
+      margin:0;
+      padding:20px;
+    }
+
+    .popup_close {
+      position:absolute;
+      right:.2em;
+      top:.2em;
+      width: auto;
+
+      background: none;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding:0 2px;
+      font-size: $font-size-24;
+      font-weight: bold;
+
+      a {
+        display:inline-block;
+        padding:1px 8px;
+        @include link-color-set(#999, #666);
+      }
+    }
+  }
+}

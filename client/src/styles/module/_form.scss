@@ -1,0 +1,131 @@
+/* form item */
+.JSInput {
+  background-color: transparent;
+  border: solid 1px $input-border;
+  border-radius: 0px;
+  outline: none;
+  width: 100%;
+  font-size: $font-size-14;
+  line-height: 1.5em;
+  margin: 4px 0 4px 0;
+  padding: 10px 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+
+  &.valid {
+    border: solid 1px $input-valid-background;
+  }
+  &.invalid {
+    border: solid 1px $input-invalid-background;
+  }
+
+  &:disabled, &[readonly] {
+    border: solid 1px $input-border;
+    background-color: $input-disabled-background;
+  }
+}
+
+.JSButton {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  outline: none;
+  box-sizing: border-box;
+
+  /* 커스터마이징 필요 */
+  border: 1px solid transparent;
+  margin: .1em auto 6px;
+  padding: .375em .75em;
+  font-size: 1em;
+  line-height: 1.5;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+
+  &.blue {
+    @include button-color-set($button-blue-text, $button-blue-background, $button-blue-border);
+  }
+  &.darkblue {
+    @include button-color-set($button-darkblue-text, $button-darkblue-background, $button-darkblue-border);
+  }
+  &.red {
+    @include button-color-set($button-red-text, $button-red-background, $button-red-border);
+  }
+  &.yellow {
+    @include button-color-set($button-blue-text, $button-blue-background, $button-blue-border);
+  }
+  &:disabled {
+    color: $button-disabled-text;
+    background-color: $button-disabled-background;
+    border-color: $button-disabled-border;
+    cursor: default !important;
+  }
+
+  &.mini {
+    @include button-size-set(20%, 100px, 200px);
+  }
+
+  &.wide {
+    @include button-size-set(100%);
+  }
+
+
+}
+
+/* from layout */
+.form-wrapper {
+  margin: 0 auto;
+
+  .form-set {
+    width: 100%;
+    position: relative;
+    padding: 4px;
+
+    .form-row {
+      padding: 8px 0 8px 0;
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+
+    .form-label {
+      padding: 2px 8px 8px 4px;
+      font-weight: bold;
+      min-width: 104px;
+      display: inline-block;
+      color: #666;
+      text-align: left;
+
+      &.bullet-none {
+        padding: 2px 8px 8px 12px;
+      }
+    }
+
+    .bullet-left {
+      padding: 2px 8px 8px 12px;
+      position: relative;
+      &:before {
+        color: $button-red-background;
+        content: "*";
+        display: inline-block;
+        position: absolute;
+        top: 4px;
+        left: 1px;
+      }
+    }
+    .bullet-right {
+      position: relative;
+      &:after {
+        color: $button-red-background;
+        content: "*";
+        display: inline-block;
+        position: absolute;
+        padding:4px 0 0 6px;
+      }
+    }
+  }
+
+}
+
+

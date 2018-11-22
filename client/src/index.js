@@ -7,6 +7,7 @@ import App from "components/App";
 import I18n from "redux-i18n";
 import { translations } from "translations";
 
+import "styles/common.scss";
 
 ReactDOM.render(
     <Provider store={store}>
