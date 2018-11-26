@@ -15,8 +15,8 @@
         margin-top: 68.5px;
 
         .step01{
-            width: 74px;
-            height: 28px;
+            margin-top: 5px;
+            width: 100%;
             font-size:22px;
             font-weight: bold;
             line-height: 0.82;
@@ -27,14 +27,13 @@
 
         }
         .step02{
-            width: 74px;
-            height: 28px;
+            width:100%;
             font-size:22px;
             font-weight: bold;
             line-height: 0.82;
             letter-spacing: normal;
             color: #323335;
-            margin-top: 149px;
+            margin-top: 170px;
             margin-left: 148px;
             margin-right: 74px;
         }
@@ -43,18 +42,16 @@
             width: 870px;
             height:607px;
             margin-right:139px;
+            margin-top: 68.5px;
 
             .content1{
-                width: 731px;
-                height: 36px;
-                font-size:13px;
+                font-size:14px;
                 font-weight:500;
                 font-stretch:normal;
                 line-height: 1.5;
                 letter-spacing: normal;
                 color: #323335;
-                margin-top: 68.5px;
-
+                
             }
 
             .content2 {
@@ -64,6 +61,16 @@
                 font-weight: bold;
                 color: #323335;
                 margin-top: 19px;
+
+                .buttons{
+                    margin-top:14px;
+                    display:flex;
+                    .space{
+                        margin-left: 4px;
+                        margin-right: 4px;
+                        
+                    }
+                }
             }
 
             
@@ -72,7 +79,7 @@
                 margin-top: 102px;
                 width: 724px;
                 height: 78px;
-                font-size: 13px;
+                font-size: 14px;
                 font-weight: bold;
                 line-height: 1.5;
                 letter-spacing: normal;

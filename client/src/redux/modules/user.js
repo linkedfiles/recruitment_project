@@ -60,8 +60,8 @@ function usernameLogin(username, password) {
 // initial state
 
 const initialState = {
-    isLoggedIn: localStorage.getItem("high")? true : false,
-    token: localStorage.getItem("high")
+    isLoggedIn: localStorage.getItem("jwt")? true : false,
+    token: localStorage.getItem("jwt")
 }
 
 
@@ -81,7 +81,7 @@ function reducer(state = initialState, action) {
 
 function applySetToken(state, action) {
     const { token } = action;
-    localStorage.setItem("high", token);
+    localStorage.setItem("jwt", token);
     return {
       ...state,
       isLoggedIn: true,

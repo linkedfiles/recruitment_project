@@ -13,11 +13,14 @@
   }
 }
 
-@mixin button-size-set($width, $min-width:null, $max-width:null) {
+@mixin button-size-set($width, $min-width:null, $max-width:null, $half-width:null) {
   width:$width;
   min-width: $min-width;
+  half-width: $half-width;
   max-width: $max-width;
 }
+
+
 
 @mixin link-color-set($normal-color, $hover-color:null) {
   color: $normal-color;

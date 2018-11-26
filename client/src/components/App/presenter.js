@@ -8,6 +8,9 @@ import JI_04 from "components/JI_04/presenter";
 import LI04 from "components/LI-04/presenter";
 import JI_02 from "components/JI_02";
 import JI_0201 from "components/JI_0201";
+import LI_03 from "components/LI_03/presenter";
+import LI_03_01 from "components/LI_03_01/presenter";
+
 import Signup from "components/SignupForm";
 
 
@@ -42,6 +45,8 @@ App.propTypes = {
   <Switch>
     <Route exact path="/" component={Auth} />
     <Route path="/JI04" component={JI_04} />
+    <Route path="/LI_03" component={LI_03} />
+    <Route path="/LI_03_01" component={LI_03_01} />
     <Route path="/LI04" component={LI04} />
     <Route path="/JI_02" component={JI_02} />
     <Route path="/JI_0201" component={JI_0201} />

@@ -10,7 +10,7 @@ const Header = (props, context) => (
     <div className={styles.navigation}>
         <div className={styles.inner}>
           <div className={styles.logocolumn}> 
-              <Link onClick={this.forceUpdate} to={'/recover'}>
+              <Link onClick={this.forceUpdate} to={"/"}>
               <img
                  src={require("assets/img/logo.png")}
                  className={styles.logo}
@@ -40,7 +40,7 @@ const Header = (props, context) => (
 
             <div className={styles.join_login_column}>
               <div className={styles.navmenu_login}> 
-                <Link to = "/signup" style={{ color: '#FFF', textDecoration: 'none' }}>
+                <Link to = "/signup" style={{ color: '#FFF', textDecoration: 'none'}}>
                 회원가입
                 </Link> 
               </div>
