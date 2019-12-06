@@ -44,7 +44,7 @@ const JI_02 = (props, context) => (
                         </div>
                     </div>
                     <hr />
-                    <input type="submit" className={styles.button} value="입력 완료"/>
+                    <input type="submit" className={styles.button} value="입력 완료됨"/>
                 </form>
             </div>
         </div>
