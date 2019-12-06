@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Common Style Guide</title>
+</head>
+<body>
+<header></header>
+<section class="wrapper">
+    <div class="form-wrapper">
+        <form name="" id="id1" method="get" autocomplete="off" onsubmit="return false;">
+            <fieldset class="form-set">
+                <legend class="none">검색창</legend>
+                <div class="form-row">
+                    <label class="form-label ">비활성화</label>
+                    <input type="text" name="" maxlength="50" placeholder="이름" value="" class="JSInput" disabled>
+                </div>
+                <div class="form-row">
+                    <label class="form-label bullet-right">이메일 </label>
+                    <input type="text" name="" maxlength="50" placeholder="이메일" value="" class="JSInput">
+                </div>
+                <div class="form-row">
+                    <label class="form-label bullet-none">비밀번호</label>
+                    <input type="password" name="" maxlength="50" placeholder="비밀번호" value="" class="JSInput valid">
+                </div>
+                <div class="form-row">
+                    <label class="form-label bullet-left">비밀번호 확인</label>
+                    <input type="password" name="" maxlength="50" placeholder="비밀번호 확인" value="" class="JSInput invalid">
+                </div>
+                <div class="form-row">
+                    <label class="form-label">상세설명</label>
+                    <textarea name="" rows="8" cols="12" placeholder="상세설명" class="JSInput JSTextarea"></textarea>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">셀렉트</label>
+                    <select name="" class="JSInput JSTextarea">
+                        <option value="1">option 1</option>
+                        <option value="2">선택사항 2</option>
+                        <option value="3">선택사항 3</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">셀렉트 비활성화</label>
+                    <select name="" class="JSInput JSTextarea" disabled>
+                        <option value="">셀렉트 비활성화</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="JSButton blue mini"> 전송</button>
+                    <button type="reset" class="JSButton red"> 취소</button>
+                    <button type="button" class="JSButton darkblue" onclick="document.getElementsByClassName('modal')[0].className = 'modal';"><i class="fas fa-address-card"></i> 버튼</button>
+                    <button type="button" class="JSButton wide" disabled="disabled"> 비활성화</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</section>
+<footer></footer>
+<section class="modal none">
+    <div class="popup">
+        <div class="popup-contents">
+            <h3>제목 영역</h3>
+            <div class="popup_close"><a href="#" onclick="document.getElementsByClassName('modal')[0].className = 'modal none';"><i class="fas fa-times"></i></a></div>
+            <div>
+                여기에 내용을 추가
+                <br/>이것저것
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

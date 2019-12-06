@@ -89,8 +89,6 @@ function applySetToken(state, action) {
     };
   }
 
-  
-
 
 
 // exports

@@ -46,7 +46,7 @@
      justify-content: center;
      align-items: center;
      //margin-right: 38px;
-     margin-left:150px;
+     margin-left:200px;
      .usericon {
         width: 20%;
       
@@ -79,14 +79,25 @@
  
           
         }
-        .navmenu2 {
+        .navmenu2  {
          align-items: center;
          font-size:15px;
          line-height: 19px;
          margin-right: 88px;
          font-weight: bold;
-         
+      
         }
+
+        .navmenu2:hover {
+          color: $font-color-gray;
+        }
+
+        .navmenu2:active, .navmenu2.active {
+          color: white;
+          color: $font-color-gray;
+        }
+
+     
  
         .navmenu3 {
          align-items: center;

@@ -37,7 +37,7 @@ app.post('/api/v1/users/login', (req, res) => {
 });
 
 
-//로그인 시 관련 회사 정보 판별
+//로그인 시 정보 판별
 app.get('/api/v1/users/:_id/Companies', (req, res) => {
   fs.readFile(__dirname + '/client/src/json/' + 'User-Companies.json', 'utf8', (err, data) => {
       if (err) res.status(500).json({"status" : 500, "error": err, "response": null});

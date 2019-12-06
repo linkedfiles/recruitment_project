@@ -9,10 +9,10 @@ export const getCompaniesInfo = props => {
 };
 
 const Companies = (props) => {
-   if(props.Companies.companies1 !== null) {
+   if(props.Companies.companies1 === null) {
        return <Redirect to= "/MyPage"/>
    }
-   return<Redirect to= "/ji04"/>
+   return<Redirect to= "/JI_04"/>
 }
 
 

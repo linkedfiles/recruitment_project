@@ -11,8 +11,8 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.column}>
             <div className={styles.contents}><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/">HOME</Link> </div>
-            <div className={styles.contents}><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/JI04">JI04</Link> </div>
-            <div className={styles.contents}><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/LI04">LI04</Link> </div>
+            <div className={styles.contents}><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/JI_04">JI04</Link> </div>
+            <div className={styles.contents}><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/LI_04">LI04</Link> </div>
             <div className={styles.contents}><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/JI_02">JI_02</Link> </div>
             <div className={styles.contents}><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/JI_0201">JI_0201</Link> </div>
             <div className={styles.contents}><Link style={{ color: '#FFF', textDecoration: 'none' }} to="/LI_03">LI_03</Link> </div>

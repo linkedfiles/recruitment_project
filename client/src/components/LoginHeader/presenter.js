@@ -2,7 +2,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./styles.scss";
 
 
@@ -10,24 +10,18 @@ const LoginHeader = (props, context) => (
     <div className={styles.navigation}>
         <div className={styles.inner}>
           <div className={styles.logocolumn}> 
-              <Link onClick={this.forceUpdate} to={'/'}>
-              <img
-                 src={require("assets/img/logo.png")}
-                 className={styles.logo}
-                 
-               />
-               </Link>
+              
            </div>
              <div className={styles.menucolumn}>
               <div className={styles.navmenu1}>
-                <Link to ="/JI04" style={{ color: '#FFF' , textDecoration: 'none' }}>
-                  대시보드
+                <Link to ="/JI_04" style={{ color: '#FFF' , textDecoration: 'none' }}>
+                  개발보드관리
                 </Link>
               </div>
               <div className={styles.navmenu2}>
-                <Link to ="/" style={{ color: '#FFF', textDecoration: 'none' }}>
-                  지원자 관리
-                </Link>
+                <NavLink to ="/" className="item2" activeclassName="active" style={{ color: '#FFF', textDecoration: 'none' }}>
+                  코드 관리
+                </NavLink>
               </div>
               <div className={styles.navmenu3}>
                 <Link to ="/" style={{ color: '#FFF', textDecoration: 'none' }}>

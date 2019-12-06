@@ -1,10 +1,15 @@
 {
+    "email_check": "true",
+
     "companies1" : [
-        { "company_id" : 3 }
+        { "company_id" : 2 }
     ],
     "companies2" : [
         { "company_id" : 3 }
     ],
     "companies3" : [
-    ]
+    ],
+
+    "comapny_number" : "123-45-67891"
+
 }

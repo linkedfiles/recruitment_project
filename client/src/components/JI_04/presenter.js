@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import styles from "./styles.scss";
 
-const JI04 = () => {
+const ben = false;
+
+const JI_04 = () => {
     return (
         <div className={styles.ji04}>
+            {!ben && <Redirect to ="/JI_03_01"/>}
             <div className={styles.column1}>
                 
                 <div className={styles.step01}> 01 단계 </div>
@@ -75,5 +78,5 @@ const JI04 = () => {
     );
 };
 
-export default JI04;
+export default JI_04;
  
